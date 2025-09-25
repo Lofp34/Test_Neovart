@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>À propos – Neovart</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inner">
+        <a class="logo" href="index.html">Neovart</a>
+        <nav class="nav" aria-label="Navigation principale">
+          <a href="discover.html">Découvrir</a>
+          <a href="artists.html">Artistes</a>
+          <a href="services.html">Offres &amp; Services</a>
+          <a href="about.html" aria-current="page">À propos</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="actions">
+          <button class="button ghost" data-modal-target="search" aria-label="Ouvrir la recherche">🔍</button>
+          <a class="button secondary" data-modal-target="interest" href="#">Manifester un intérêt</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="breadcrumbs"><a href="index.html">Accueil</a> / À propos</div>
+      <section>
+        <h1 class="section-title">Notre mission</h1>
+        <p class="section-intro">
+          Neovart est une galerie d'art en ligne née d'une conviction : rendre l'art contemporain accessible
+          sans compromettre l'exigence curatoriale. Nous réunissons artistes confirmés et talents émergents
+          dans une expérience digitale immersive.
+        </p>
+        <div class="grid">
+          <article class="card">
+            <h2>Transparence</h2>
+            <p>Prix affichés, conditions claires, accompagnement humain à chaque étape.</p>
+          </article>
+          <article class="card">
+            <h2>Immersion</h2>
+            <p>Visionneuses 3D, réalité augmentée et images HD permettent de ressentir l'œuvre.</p>
+          </article>
+          <article class="card">
+            <h2>Impact</h2>
+            <p>Nous soutenons des projets à portée sociale et culturelle, et accompagnons les artistes dans la durée.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">L'équipe</h2>
+        <div class="grid art-selection">
+          <article class="card artist-card">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80" alt="Portrait fondatrice" />
+            <h3>Camille Rey</h3>
+            <p>Fondatrice &amp; curatrice. 10 ans de direction artistique et de production d'expositions internationales.</p>
+          </article>
+          <article class="card artist-card">
+            <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80" alt="Portrait directeur artistique" />
+            <h3>Louis Perrin</h3>
+            <p>Directeur artistique. Spécialiste des expériences immersives et des dispositifs interactifs.</p>
+          </article>
+          <article class="card artist-card">
+            <img src="https://images.unsplash.com/photo-1504595403659-9088ce801e29?auto=format&fit=crop&w=400&q=80" alt="Portrait responsable collectionneurs" />
+            <h3>Sara Mendès</h3>
+            <p>Responsable collectionneurs. Réseau international de collectionneurs et institutions partenaires.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div>
+          <strong>Neovart</strong>
+          <small>Galerie d'art en ligne nouvelle génération.</small>
+        </div>
+        <div class="footer-nav">
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="politique-confidentialite.html">Politique de confidentialité</a>
+          <a href="mailto:contact@neovart.com">contact@neovart.com</a>
+        </div>
+        <div class="footer-nav">
+          <span>Suivez-nous</span>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Pinterest</a>
+        </div>
+      </div>
+    </footer>
+
+    <div id="search-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="search-modal-title">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Fermer">×</button>
+        <h2 id="search-modal-title">Recherche universelle</h2>
+        <form>
+          <div class="form-group">
+            <label for="search-query">Œuvre, artiste, médium…</label>
+            <input id="search-query" type="search" name="query" placeholder="Tapez votre recherche" />
+          </div>
+          <button class="button" type="submit">Rechercher</button>
+        </form>
+        <p class="modal-confirmation" hidden>Merci ! Nous reviendrons vers vous avec une sélection personnalisée.</p>
+      </div>
+    </div>
+
+    <div id="interest-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="interest-modal-title">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Fermer">×</button>
+        <h2 id="interest-modal-title">Entrer en contact</h2>
+        <form>
+          <div class="form-group">
+            <label for="interest-name">Nom</label>
+            <input id="interest-name" name="name" type="text" required />
+          </div>
+          <div class="form-group">
+            <label for="interest-email">Email</label>
+            <input id="interest-email" name="email" type="email" required />
+          </div>
+          <div class="form-group">
+            <label for="interest-message">Message</label>
+            <textarea id="interest-message" name="message" placeholder="Comment pouvons-nous vous aider ?"></textarea>
+          </div>
+          <button class="button" type="submit">Envoyer</button>
+        </form>
+        <p class="modal-confirmation" hidden>Merci ! Nous revenons vers vous très vite.</p>
+      </div>
+    </div>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

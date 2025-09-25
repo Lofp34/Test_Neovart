@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neovart — Galerie d'art en ligne 2.0</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inner">
+        <a class="logo" href="index.html">Neovart</a>
+        <nav class="nav" aria-label="Navigation principale">
+          <a href="discover.html">Découvrir</a>
+          <a href="artists.html">Artistes</a>
+          <a href="services.html">Offres &amp; Services</a>
+          <a href="about.html">À propos</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="actions">
+          <button class="button ghost" data-modal-target="search" aria-label="Ouvrir la recherche">🔍</button>
+          <a class="button secondary" href="discover.html">Découvrir</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>La galerie d'art en ligne 2.0</h1>
+          <p>
+            Pour artistes professionnels et talents émergents. Voir, comprendre, ressentir :
+            explorez notre sélection curatoriale, vivez des expériences immersives et
+            échangez directement avec nos experts.
+          </p>
+          <div class="actions">
+            <a class="button" href="discover.html">Découvrir les œuvres</a>
+            <a class="button secondary" data-modal-target="artist" href="#">Rejoindre en tant qu'artiste</a>
+          </div>
+        </div>
+        <div class="hero-visual" role="presentation"></div>
+      </section>
+
+      <section aria-labelledby="selection-title">
+        <h2 id="selection-title" class="section-title">Sélection du moment</h2>
+        <p class="section-intro">
+          Une curation hebdomadaire des œuvres qui marquent la scène contemporaine. Chaque pièce est
+          accompagnée d'expériences 3D, AR ou HD pour vous immerger pleinement.
+        </p>
+        <div class="grid art-selection">
+          <article class="card artwork-card">
+            <div class="badges">
+              <span class="badge">3D</span>
+              <span class="badge">HD</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=800&q=80" alt="Sculpture abstraite" />
+            <div class="artwork-meta">
+              <h3>Résonance minérale</h3>
+              <p>Adèle Lenoir — 2023</p>
+            </div>
+          </article>
+          <article class="card artwork-card">
+            <div class="badges">
+              <span class="badge">AR</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=800&q=80" alt="Peinture colorée" />
+            <div class="artwork-meta">
+              <h3>Chromatique I</h3>
+              <p>Ismael Duarte — 2022</p>
+            </div>
+          </article>
+          <article class="card artwork-card">
+            <img src="https://images.unsplash.com/photo-1458530970867-aaa3700c36b0?auto=format&fit=crop&w=800&q=80" alt="Peinture abstraite" />
+            <div class="artwork-meta">
+              <h3>Souffle des lunes</h3>
+              <p>Maya Inaba — 2024</p>
+            </div>
+          </article>
+          <article class="card artwork-card">
+            <div class="badges">
+              <span class="badge">HD</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=800&q=80" alt="Œuvre géométrique" />
+            <div class="artwork-meta">
+              <h3>Matrice vivante</h3>
+              <p>Yonas Girmay — 2021</p>
+            </div>
+          </article>
+          <article class="card artwork-card">
+            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=800&q=80" alt="Installation lumineuse" />
+            <div class="artwork-meta">
+              <h3>Lueur nordique</h3>
+              <p>Clara Nør — 2023</p>
+            </div>
+          </article>
+          <article class="card artwork-card">
+            <div class="badges">
+              <span class="badge">3D</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1458530970867-aaa3700c36b0?auto=format&fit=crop&w=800&q=80" alt="Sculpture futuriste" />
+            <div class="artwork-meta">
+              <h3>Orbitale</h3>
+              <p>Studio Cintre — 2024</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="artists-title">
+        <h2 id="artists-title" class="section-title">Artistes à la une</h2>
+        <p class="section-intro">Trois univers singuliers qui incarnent l'esprit Neovart.</p>
+        <div class="grid art-selection">
+          <article class="card artist-card">
+            <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80" alt="Portrait d'artiste" />
+            <h3>Adèle Lenoir</h3>
+            <p>Sculptrice minérale, elle transforme la pierre en paysages sensibles aux reflets métalliques.</p>
+            <a class="button ghost" href="artists.html">Voir tous les artistes</a>
+          </article>
+          <article class="card artist-card">
+            <img src="https://images.unsplash.com/photo-1504595403659-9088ce801e29?auto=format&fit=crop&w=400&q=80" alt="Portrait d'artiste" />
+            <h3>Ismael Duarte</h3>
+            <p>Peintre cinétique mêlant pigments naturels et projections numériques pour créer des œuvres vivantes.</p>
+            <a class="button ghost" href="artists.html">Voir tous les artistes</a>
+          </article>
+          <article class="card artist-card">
+            <img src="https://images.unsplash.com/photo-1504595403659-9088ce801e29?auto=format&fit=crop&w=400&q=80" alt="Portrait d'artiste" />
+            <h3>Maya Inaba</h3>
+            <p>Illustratrice immersive travaillant la réalité augmentée pour prolonger le geste au-delà de la toile.</p>
+            <a class="button ghost" href="artists.html">Voir tous les artistes</a>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="immersive-title">
+        <h2 id="immersive-title" class="section-title">Expériences immersives</h2>
+        <p class="section-intro">
+          Visionneuse 3D, réalité augmentée et images HD sont intégrées à chaque étape. Découvrez comment
+          nous donnons vie aux œuvres pour que vous puissiez les ressentir chez vous.
+        </p>
+        <div class="grid art-selection">
+          <article class="card">
+            <h3>Visionneuse 3D</h3>
+            <p>Manipulez l'œuvre sous tous les angles, zoomez dans la matière et comparez les dimensions.</p>
+          </article>
+          <article class="card">
+            <h3>Voir en AR</h3>
+            <p>Projetez la pièce chez vous via un QR code. Ajustez l'échelle et l'accrochage en temps réel.</p>
+          </article>
+          <article class="card">
+            <h3>Image HD</h3>
+            <p>Inspectez les détails à 400%. Nos fichiers haute définition révèlent textures et signatures.</p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="how-title">
+        <h2 id="how-title" class="section-title">Comment ça marche ?</h2>
+        <div class="steps">
+          <div class="step">
+            <span class="tag">1</span>
+            <h3>Explorer</h3>
+            <p>Parcourez notre curation thématique, les œuvres les plus demandées ou les nouveautés.</p>
+          </div>
+          <div class="step">
+            <span class="tag">2</span>
+            <h3>Visualiser</h3>
+            <p>Activez la visionneuse 3D, l'AR ou les images HD pour ressentir la pièce dans votre espace.</p>
+          </div>
+          <div class="step">
+            <span class="tag">3</span>
+            <h3>Contacter</h3>
+            <p>Un formulaire court et un suivi personnalisé avec notre équipe ou directement l'artiste.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter" aria-labelledby="newsletter-title">
+        <div>
+          <h2 id="newsletter-title" class="section-title">Newsletter curatoriale</h2>
+          <p>Suivez la curation et les coulisses. Une sélection éditoriale envoyée deux fois par mois.</p>
+        </div>
+        <form>
+          <label class="visually-hidden" for="newsletter-email">Email</label>
+          <input id="newsletter-email" type="email" name="email" placeholder="Votre email" required />
+          <button class="button" type="submit">S'abonner</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div>
+          <strong>Neovart</strong>
+          <small>Galerie d'art en ligne nouvelle génération.</small>
+        </div>
+        <div class="footer-nav">
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="politique-confidentialite.html">Politique de confidentialité</a>
+          <a href="mailto:contact@neovart.com">contact@neovart.com</a>
+        </div>
+        <div class="footer-nav">
+          <span>Suivez-nous</span>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Pinterest</a>
+        </div>
+      </div>
+    </footer>
+
+    <div id="search-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="search-modal-title">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Fermer la recherche">×</button>
+        <h2 id="search-modal-title">Recherche universelle</h2>
+        <form>
+          <div class="form-group">
+            <label for="search-query">Œuvre, artiste, médium…</label>
+            <input id="search-query" type="search" name="query" placeholder="Tapez votre recherche" />
+          </div>
+          <button class="button" type="submit">Rechercher</button>
+        </form>
+        <p class="modal-confirmation" hidden>Merci ! Nous reviendrons vers vous avec une sélection personnalisée.</p>
+      </div>
+    </div>
+
+    <div id="artist-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="artist-modal-title">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Fermer">×</button>
+        <h2 id="artist-modal-title">Demander à exposer</h2>
+        <form>
+          <div class="form-group">
+            <label for="artist-name">Nom</label>
+            <input id="artist-name" name="name" type="text" required />
+          </div>
+          <div class="form-group">
+            <label for="artist-email">Email</label>
+            <input id="artist-email" name="email" type="email" required />
+          </div>
+          <div class="form-group">
+            <label for="artist-portfolio">Lien portfolio</label>
+            <input id="artist-portfolio" name="portfolio" type="url" placeholder="https://" required />
+          </div>
+          <div class="form-group">
+            <label for="artist-message">Message</label>
+            <textarea id="artist-message" name="message" placeholder="Partagez vos intentions et vos attentes"></textarea>
+          </div>
+          <button class="button" type="submit">Envoyer ma demande</button>
+        </form>
+        <p class="modal-confirmation" hidden>
+          Merci ! Votre dossier est bien reçu. Notre équipe reviendra vers vous sous 7 jours ouvrés.
+        </p>
+      </div>
+    </div>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

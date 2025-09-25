@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artistes – Neovart</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inner">
+        <a class="logo" href="index.html">Neovart</a>
+        <nav class="nav" aria-label="Navigation principale">
+          <a href="discover.html">Découvrir</a>
+          <a href="artists.html" aria-current="page">Artistes</a>
+          <a href="services.html">Offres &amp; Services</a>
+          <a href="about.html">À propos</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="actions">
+          <button class="button ghost" data-modal-target="search" aria-label="Ouvrir la recherche">🔍</button>
+          <a class="button secondary" data-modal-target="artist" href="#">Rejoindre</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="breadcrumbs"><a href="index.html">Accueil</a> / Artistes</div>
+      <header>
+        <h1 class="section-title">Artistes représentés</h1>
+        <p class="section-intro">
+          Une sélection de profils accompagnés par Neovart. Découvrez leur univers, leurs œuvres et prenez
+          contact en un clic.
+        </p>
+      </header>
+
+      <section class="grid art-selection">
+        <article class="card artist-card">
+          <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80" alt="Portrait Adèle Lenoir" />
+          <h3><a href="artist.html">Adèle Lenoir</a></h3>
+          <p>Basalte, métal, installations monumentales. Présente à Art Paris, Biennale de Lyon.</p>
+          <a class="button ghost" href="artist.html">Voir le profil</a>
+        </article>
+        <article class="card artist-card">
+          <img src="https://images.unsplash.com/photo-1504595403659-9088ce801e29?auto=format&fit=crop&w=400&q=80" alt="Portrait Ismael Duarte" />
+          <h3><a href="artist.html">Ismael Duarte</a></h3>
+          <p>Peintures cinétiques, expériences AR. Représenté à Mexico City &amp; Madrid.</p>
+          <a class="button ghost" href="artist.html">Voir le profil</a>
+        </article>
+        <article class="card artist-card">
+          <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=400&q=80" alt="Portrait Maya Inaba" />
+          <h3><a href="artist.html">Maya Inaba</a></h3>
+          <p>Illustration immersive, réalité augmentée, installations lumineuses.</p>
+          <a class="button ghost" href="artist.html">Voir le profil</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div>
+          <strong>Neovart</strong>
+          <small>Galerie d'art en ligne nouvelle génération.</small>
+        </div>
+        <div class="footer-nav">
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="politique-confidentialite.html">Politique de confidentialité</a>
+          <a href="mailto:contact@neovart.com">contact@neovart.com</a>
+        </div>
+        <div class="footer-nav">
+          <span>Suivez-nous</span>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Pinterest</a>
+        </div>
+      </div>
+    </footer>
+
+    <div id="search-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="search-modal-title">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Fermer">×</button>
+        <h2 id="search-modal-title">Recherche universelle</h2>
+        <form>
+          <div class="form-group">
+            <label for="search-query">Œuvre, artiste, médium…</label>
+            <input id="search-query" type="search" name="query" placeholder="Tapez votre recherche" />
+          </div>
+          <button class="button" type="submit">Rechercher</button>
+        </form>
+        <p class="modal-confirmation" hidden>Merci ! Nous reviendrons vers vous avec une sélection personnalisée.</p>
+      </div>
+    </div>
+
+    <div id="artist-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="artist-modal-title">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Fermer">×</button>
+        <h2 id="artist-modal-title">Demander à exposer</h2>
+        <form>
+          <div class="form-group">
+            <label for="artist-name">Nom</label>
+            <input id="artist-name" name="name" type="text" required />
+          </div>
+          <div class="form-group">
+            <label for="artist-email">Email</label>
+            <input id="artist-email" name="email" type="email" required />
+          </div>
+          <div class="form-group">
+            <label for="artist-portfolio">Lien portfolio</label>
+            <input id="artist-portfolio" name="portfolio" type="url" placeholder="https://" required />
+          </div>
+          <div class="form-group">
+            <label for="artist-message">Message</label>
+            <textarea id="artist-message" name="message" placeholder="Partagez vos intentions et vos attentes"></textarea>
+          </div>
+          <button class="button" type="submit">Envoyer ma demande</button>
+        </form>
+        <p class="modal-confirmation" hidden>
+          Merci ! Votre dossier est bien reçu. Notre équipe reviendra vers vous sous 7 jours ouvrés.
+        </p>
+      </div>
+    </div>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

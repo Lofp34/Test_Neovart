@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Offres &amp; Services – Neovart</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inner">
+        <a class="logo" href="index.html">Neovart</a>
+        <nav class="nav" aria-label="Navigation principale">
+          <a href="discover.html">Découvrir</a>
+          <a href="artists.html">Artistes</a>
+          <a href="services.html" aria-current="page">Offres &amp; Services</a>
+          <a href="about.html">À propos</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="actions">
+          <button class="button ghost" data-modal-target="search" aria-label="Ouvrir la recherche">🔍</button>
+          <a class="button secondary" data-modal-target="artist" href="#">Demander à exposer</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="breadcrumbs"><a href="index.html">Accueil</a> / Offres &amp; Services</div>
+
+      <section class="hero-services">
+        <h1>Nous accompagnons les artistes à chaque étape</h1>
+        <p>
+          De la stratégie artistique à la diffusion internationale, Neovart conçoit un plan d'accompagnement
+          sur mesure. Notre équipe de curateurs et de producteurs vous suit du studio aux expositions.
+        </p>
+        <a class="button" data-modal-target="artist" href="#">Demander à exposer</a>
+      </section>
+
+      <section aria-labelledby="services-pro">
+        <h2 id="services-pro" class="section-title">Accompagnement &amp; professionnalisation</h2>
+        <div class="service-columns">
+          <article class="service-card">
+            <h3>Coaching individuel</h3>
+            <p>Définition du positionnement, préparation aux expositions, media training.</p>
+          </article>
+          <article class="service-card">
+            <h3>Ateliers &amp; workshops</h3>
+            <p>Gestion de studio, pricing, storytelling visuel, préparation de dossiers professionnels.</p>
+          </article>
+          <article class="service-card">
+            <h3>Conseil juridique</h3>
+            <p>Contrats de cession, protection des droits d'auteur, accompagnement administratif.</p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="services-visibilite">
+        <h2 id="services-visibilite" class="section-title">Visibilité &amp; diffusion</h2>
+        <div class="service-columns">
+          <article class="service-card">
+            <h3>Galerie en ligne</h3>
+            <p>Présentation des œuvres en HD, 3D et AR. Fiches détaillées, prise de contact facilitée.</p>
+          </article>
+          <article class="service-card">
+            <h3>Curation &amp; éditorial</h3>
+            <p>Articles, newsletters, campagnes sociales mettant en avant votre univers.</p>
+          </article>
+          <article class="service-card">
+            <h3>Événements &amp; foires</h3>
+            <p>Participation à des expositions physiques, pop-ups et foires internationales.</p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="services-commercial">
+        <h2 id="services-commercial" class="section-title">Commercialisation &amp; collection</h2>
+        <div class="service-columns">
+          <article class="service-card">
+            <h3>Gestion des ventes</h3>
+            <p>Négociation, suivi logistique, assurance transport et installation.</p>
+          </article>
+          <article class="service-card">
+            <h3>Programmes collectionneurs</h3>
+            <p>Accès privilégié à nos collectionneurs partenaires et à des ventes privées.</p>
+          </article>
+          <article class="service-card">
+            <h3>Analytics &amp; insights</h3>
+            <p>Rapports d'audience, préférences des visiteurs, recommandations de séries à développer.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="newsletter" aria-labelledby="cta-title">
+        <div>
+          <h2 id="cta-title" class="section-title">Prêt à rejoindre la galerie ?</h2>
+          <p>Présentez votre univers. Nous revenons vers vous avec un plan d'accompagnement personnalisé.</p>
+        </div>
+        <a class="button" data-modal-target="artist" href="#">Déposer un dossier</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div>
+          <strong>Neovart</strong>
+          <small>Galerie d'art en ligne nouvelle génération.</small>
+        </div>
+        <div class="footer-nav">
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="politique-confidentialite.html">Politique de confidentialité</a>
+          <a href="mailto:contact@neovart.com">contact@neovart.com</a>
+        </div>
+        <div class="footer-nav">
+          <span>Suivez-nous</span>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Pinterest</a>
+        </div>
+      </div>
+    </footer>
+
+    <div id="search-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="search-modal-title">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Fermer">×</button>
+        <h2 id="search-modal-title">Recherche universelle</h2>
+        <form>
+          <div class="form-group">
+            <label for="search-query">Œuvre, artiste, médium…</label>
+            <input id="search-query" type="search" name="query" placeholder="Tapez votre recherche" />
+          </div>
+          <button class="button" type="submit">Rechercher</button>
+        </form>
+        <p class="modal-confirmation" hidden>Merci ! Nous reviendrons vers vous avec une sélection personnalisée.</p>
+      </div>
+    </div>
+
+    <div id="artist-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="artist-modal-title">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Fermer">×</button>
+        <h2 id="artist-modal-title">Demander à exposer</h2>
+        <form>
+          <div class="form-group">
+            <label for="artist-name">Nom</label>
+            <input id="artist-name" name="name" type="text" required />
+          </div>
+          <div class="form-group">
+            <label for="artist-email">Email</label>
+            <input id="artist-email" name="email" type="email" required />
+          </div>
+          <div class="form-group">
+            <label for="artist-portfolio">Lien portfolio</label>
+            <input id="artist-portfolio" name="portfolio" type="url" placeholder="https://" required />
+          </div>
+          <div class="form-group">
+            <label for="artist-message">Message</label>
+            <textarea id="artist-message" name="message" placeholder="Partagez vos intentions et vos attentes"></textarea>
+          </div>
+          <button class="button" type="submit">Envoyer ma demande</button>
+        </form>
+        <p class="modal-confirmation" hidden>
+          Merci ! Votre dossier est bien reçu. Notre équipe reviendra vers vous sous 7 jours ouvrés.
+        </p>
+      </div>
+    </div>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
